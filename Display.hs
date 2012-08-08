@@ -11,7 +11,7 @@ import qualified Text.PrettyPrint.HughesPJ
 import Numeric (showIntAtBase)
 import Control.Arrow (second)
 import Control.Monad.Error
-import Data.Monoid
+import Data.Monoid hiding ((<>))
 import Data.Sequence hiding (empty)
 import Data.Foldable
 
@@ -25,7 +25,7 @@ instance Pretty x => Pretty [x] where
     pretty x = brackets $ sep $ punctuate comma (map pretty x)
 
 instance (Pretty a,Pretty b) => Pretty (a,b) where
-    pretty (a,b) = parens $ pretty a <> comma <+> pretty b 
+    pretty (a,b) = parens $ pretty a Display.<> comma <+> pretty b 
 
 instance Pretty Int where
   pretty = int

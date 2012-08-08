@@ -6,7 +6,7 @@ import Data.List
 import Data.Array.IArray
 import Data.Char
 import Display
-import Data.Monoid
+import Data.Monoid hiding ((<>))
 import Permutation
 
 data Bit = Zero | One deriving (Ord,Eq,Ix)

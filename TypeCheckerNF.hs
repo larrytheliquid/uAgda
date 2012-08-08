@@ -23,7 +23,7 @@ import Data.Char
 import Data.Maybe (isJust)
 import Control.Monad.Trans.Error (ErrorT, runErrorT)
 import Control.Monad.Writer.Class
-import Control.Monad.Writer hiding (sequence)
+import Control.Monad.Writer hiding (sequence, (<>))
 import Control.Monad.Trans.State (StateT, execStateT, modify, get)
 import Data.Functor.Identity
 import Data.Sequence hiding (replicate)

@@ -15,7 +15,7 @@ import Display
 import qualified RawSyntax as A
 import RawSyntax (Identifier(..))
 import Control.Applicative
-import Data.Monoid
+import Data.Monoid hiding ((<>))
 import Data.Sequence (Seq)
 import Cubes
 

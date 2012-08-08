@@ -44,14 +44,14 @@ executable uAgda
      Terms
      TypeCheckerNF
 
-  build-depends: base==4.*
-  build-depends: array==0.3.*
-  build-depends: cmdargs==0.6.*
-  build-depends: containers==0.4.*
-  build-depends: pretty==1.1.*
-  build-depends: parsec==2.1.*
-  build-depends: BNFC-meta==0.2.*
-  build-depends: transformers == 0.2.*
-  build-depends: mtl == 2.0.*
-  build-depends: split == 0.1.*
+  build-depends: base
+  build-depends: array
+  build-depends: cmdargs
+  build-depends: containers
+  build-depends: pretty
+  build-depends: parsec
+  build-depends: BNFC-meta
+  build-depends: transformers
+  build-depends: mtl
+  build-depends: split
   
